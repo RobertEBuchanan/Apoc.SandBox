@@ -1,0 +1,237 @@
+.Summary 
+{
+    width:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+    word-wrap: break-word;
+    -ms-word-wrap: break-word;
+    white-space:normal;
+}
+
+/*Creates even spacing between all the potential content elements*/
+.Summary h1,
+.Summary h2,
+.Summary h3,
+.Summary h4,
+.Summary h5,
+.Summary h6,
+.Summary p,
+.Summary ul,
+.Summary ol,
+.Summary dl
+{
+	margin: 0;
+	padding: 5px 0;
+	font-weight: normal;
+}
+/*Indents the headers so they all line up*/
+.Summary h1, 
+.Summary h2, 
+.Summary h3, 
+.Summary h4, 
+.Summary h5, 
+.Summary h6
+{
+	text-indent: 10px;	
+}
+
+.Summary h1
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+    color:Red;
+	font-size: 1.5em;
+	font-variant: small-caps;
+	display: block;
+	background: #e8e8ef;
+	border: 1px solid #27579f;
+	padding: 2px;
+	margin-bottom: 10px;
+}
+
+.Summary h2
+{
+	color: 	#fff;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.3em;
+	background: #15365b;
+	display: block;
+	width: 100%;
+	padding: 3px 0;
+	margin-top:10px;
+	font-variant: small-caps;
+}
+
+.Summary h3
+{
+	color: #1f4680;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.Summary .None
+{
+    display:none;
+}
+.Summary .Red
+{
+    color:Red;
+}
+.Summary .Bold
+{
+    font-weight:bold;
+}
+.Summary .Left
+{
+    text-align:left;
+}
+.Summary .Right
+{
+    text-align:right;
+}
+.Summary .Center
+{
+    text-align:center;
+}
+.Summary .Italic
+{
+    font-style:italic;
+}
+.Summary .Underline
+{
+    text-decoration:underline;
+}
+
+.Summary .Indent
+{
+    margin-left:20px;
+}
+
+.Summary .Top
+{
+    margin-top: 15px;
+}
+
+.Summary .Section
+{
+    /* IE Does not listen properly
+    margin-left: 20px;
+    margin-right:20px;*/
+}
+
+.Summary .SummaryRow
+{
+    /*width: 100%;*/
+    clear: both;
+    overflow: hidden;
+    padding-top:1px;
+    padding-bottom:1px;
+    margin-left:20px;
+}
+
+.Summary .Table
+{
+    border: 2px solid Black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #FAFAFA;
+    width: 100%;
+    margin-right:120px;
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.Summary .Table .Row th
+{
+    text-align: center;
+    background-color: #DDDDFF;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: Black;
+    border-left-style: solid;
+    border-left-width: 2px;
+    padding: 5px;
+}
+.Summary .Table .Row td
+{
+    padding-left: 5px;
+    text-align: left;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: Black;
+    border-left-style: solid;
+    border-left-width: 2px;
+    padding-right: 5px;
+    vertical-align: top;
+}
+.Summary .Table .Inner th
+{
+    padding-left: 5px;
+    text-align: center;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: #6699CC;
+    border-left-style: solid;
+    border-left-width: 2px;
+    padding-right: 5px;
+}
+.Summary .Table .Inner td
+{
+    padding-left: 5px;
+    text-align: left;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-color: #6699CC;
+    border-left-style: solid;
+    border-left-width: 2px;
+    padding-right: 5px;
+}
+
+.Summary .Table table.Clear 
+{
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.Summary .Table table.Clear td
+{
+    border: none;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.Summary .Table table.Clear td.Last
+{
+    border-right: none;
+}
+
+.Summary .Greyed
+{
+    background-color:#AAAAAA;
+}
+.Summary .TableWithBorder
+{
+    border-top: 2px solid black;
+    border-left:1px solid black;
+    border-collapse:collapse;
+    text-align:center;
+}
+.Summary .TableWithBorder th
+{
+    border-left:  2px solid black;
+    border-right: 2px solid black;
+    border-bottom:2px solid black;
+}
+.Summary .TableWithBorder td
+{
+    border-right: 1px solid black;
+    border-bottom:1px solid black;
+}
+
+.Break {
+    word-break:break-all;
+}
