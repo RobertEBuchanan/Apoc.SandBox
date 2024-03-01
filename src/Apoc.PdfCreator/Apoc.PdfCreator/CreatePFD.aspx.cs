@@ -83,18 +83,18 @@ namespace Apoc.PdfCreator
 
         public string GetHTML()
         {
-            var path = Path.Combine(Request.PhysicalApplicationPath, "App_Data", "Samples", "Sample_Test_HMTL.html");
+            if (string.IsNullOrWhiteSpace(txtInputHTML.Text))
+            {
+                var path = Path.Combine(Request.PhysicalApplicationPath, "App_Data", "Samples", "Sample_Test_HMTL.html");
 
-            var dir = new DirectoryInfo(Path.Combine(Request.PhysicalApplicationPath, "App_Data", "Samples"));
-            var exists = dir.Exists;
+                StreamReader sr = new StreamReader(path);
+                string html = sr.ReadToEnd();
+                sr.Close();
 
-            var info = new FileInfo(path);
-
-            StreamReader sr = new StreamReader(path);
-            string html = sr.ReadToEnd() ;
-            sr.Close();
-
-            return html;
+                return html;
+            }
+            else 
+                return txtInputHTML.Text.Trim();
         }
 
         public string GetCSS()
