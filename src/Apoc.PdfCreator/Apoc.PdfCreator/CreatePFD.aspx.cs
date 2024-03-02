@@ -91,6 +91,34 @@ namespace Apoc.PdfCreator
                 string html = sr.ReadToEnd();
                 sr.Close();
 
+
+                html = html.Replace("<h1>",
+                                    "<table style=\" width: 100%; color: red; background: #e8e8ef; padding: 2px; border: 1px solid #27579f; font-size: 1.5em;" +
+                                    "margin-top:10px; font-variant: small-caps;" +
+                                    "\"><tr><td style=\"top-padding: 0px; bottom-padding: 0px;\"><h1>"
+
+                                    //"<table style=\" width: 100%; color: #fff; font-family: Georgia, " +
+                                    //"\"Times New Roman\", Times, serif; font-size: 1.3em; " +
+                                    //"background: #15365b; display: block; width: 100%; padding: 3px 0; " +
+                                    //"margin-top:10px; font-variant: small-caps;\"><tr><td><h1>"
+
+                                    );
+
+                html = html.Replace("</h1>", "</h1></td></tr></table>");
+
+                html = html.Replace("<h2>",
+                                    "<table style=\" width: 100%; color: #fff; background: #15365b; padding: 3px 0; " +
+                                    "margin-top:10px; font-variant: small-caps; font-size: 1.3em; margin-bottom: 10px; margin-top: 10px;" +
+                                    "margin-top: 10px; font-variant: small-caps;" +
+                                    "\"><tr><td style=\"top-padding: 0px; bottom-padding: 0px; top-margin: 15px;\"><h2 style=\"top-margin: 15px;\">"
+
+                                    //"<table style=\" width: 100%; color: #fff; font-family: Georgia, " +
+                                    //"\"Times New Roman\", Times, serif; font-size: 1.3em; " +
+                                    //"background: #15365b; display: block; width: 100%; padding: 3px 0; " +
+                                    //"margin-top:10px; font-variant: small-caps;\"><tr><td><h2>"
+
+                                    );
+                html = html.Replace("</h2>", "</h2></td></tr></table>");
                 return html;
             }
             else 

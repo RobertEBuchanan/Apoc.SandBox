@@ -116,6 +116,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="App_Data\Samples\Sample_Test_CSS.css" />
+    <Content Include="App_Data\Samples\Sample_Test_HMTL_r1.html" />
     <Content Include="App_Data\Samples\Sample_Test_HMTL.html" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
